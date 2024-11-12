@@ -1,0 +1,6 @@
+beautifulsoup4==4.12.3
+html5lib>=1.1
+requests_tor==1.4
+prettytable==3.12
+#pyopenssl>=24.2.1
+pyfiglet>=1.0.2
