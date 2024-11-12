@@ -4,7 +4,7 @@ Obtain a Magnet link for torrenting could be frustrating:
 - Close a lot of ads/popups
 - Lots of redirects
 
-MagnaMagnet is a simple Python script to search torrents from the popuplar website 1337x and get the magnet link in a fast way from command line.
+MagnaMagnet is a simple Python script to search torrents from the popular website 1337x and get the magnet link in a fast way from command line.
 The requests to 1337x are made by RequestsTor.
 
 ## Requirements
@@ -21,7 +21,7 @@ Clone this repo, then from the root folder of the project launch:
 
 ```sh
 python3 -m venv venv
-source myvenv/bin/activate
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
