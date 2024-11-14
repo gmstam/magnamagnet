@@ -15,20 +15,19 @@ install the package following this guide:
 
 https://support.torproject.org/it/apt/
 
-## Setup
+Supported OS:
+- Linux
+- MacOS
 
-Clone this repo, then from the root folder of the project launch:
+Windows is not currently supported
+
+## Usage 
+
+Download the [latest release of the file magnamagnet](https://github.com/gmstam/magnamagnet/releases/tag/v1.0.1)
+From the folder you download the file, run:
 
 ```sh
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-## Usage
-
-```sh
-python3 run.py -k 'terminator'  
+magnamagnet -k 'terminator'  
 ```
 
 Results of the first page will be displayed in a table.
@@ -59,9 +58,30 @@ The magnet link will be printed in the console.
 The script is tested on MacOS Sonoma and Ubuntu 24.04.
 Please feel free to report issues or contribute to this script with a pull request
 
+## Development 
+
+Clone this repo, then from the root folder of the project launch:
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Usage in Development
+
+```sh
+python3 run.py -k 'terminator'  
+```
+
+### Build Executable
+
+```sh
+pyinstaller --onefile --collect-all pyfiglet run.py
+```
+
 ## Troubleshooting
 
-### ConnectionRefusedError: [Errno 61] Connection refused
+### ConnectionRefusedError: [Errno 61] Connection refused
 
 Just open TorBrowser and click `Connect`
-
