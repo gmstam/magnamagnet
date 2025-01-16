@@ -23,11 +23,16 @@ Windows is not currently supported
 
 ## Usage 
 
-Download the [latest release of the file magnamagnet](https://github.com/gmstam/magnamagnet/releases/tag/v1.0.1)
-From the folder you download the file, run:
+Clone this repository and go into the folder of `magnamagnet`. Open a terminal inside the folder and run:
 
 ```sh
-magnamagnet -k 'terminator'  
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+```sh
+python3 magnamagnet.py -k 'terminator' 
 ```
 
 Results of the first page will be displayed in a table.
@@ -57,22 +62,6 @@ The magnet link will be printed in the console.
 
 The script is tested on MacOS Sonoma and Ubuntu 24.04.
 Please feel free to report issues or contribute to this script with a pull request
-
-## Development 
-
-Clone this repo, then from the root folder of the project launch:
-
-```sh
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Usage in Development
-
-```sh
-python3 run.py -k 'terminator'  
-```
 
 ### Build Executable
 
